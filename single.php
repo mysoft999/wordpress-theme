@@ -12,13 +12,12 @@ while (have_posts()) :
     //     comments_template();
     // }
 
-    // the_post_navigation(
-    //     array(
-    //         "next_text" => "<p class='meta-nav'>next post</p><p class='post-title'>%title</p>",
-    //         "prev_text" => "<p class='meta-nav'>pre post</p><p class='post-title'>%title</p>",
-    //     )
-    // );
-    //echo get_the_post_navigation();
+    the_post_navigation(
+        array(
+            "next_text" => "<span class='meta-nav'>下一篇：</span><span class='post-title'>%title</span>",
+            "prev_text" => "<span class='meta-nav'>上一篇：</span><span class='post-title'>%title</span>",
+        )
+    );
 endwhile;
 
 get_footer();

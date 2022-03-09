@@ -1,11 +1,12 @@
 <?php
-//add site css
-function wp_load_css()
+//add site css js
+function wp_load_css_js()
 {
     wp_enqueue_style("style", get_template_directory_uri() . "/style.css", null, null, "screen");
     wp_enqueue_style("font-awesome", get_template_directory_uri() . "/assets/includes/font-awesome-4.7.0/css/font-awesome.min.css", null, null, "screen");
+    wp_enqueue_script("site-function", get_template_directory_uri() . "/assets/js/bundle.js", [], null, true);
 }
-add_action("wp_enqueue_scripts", "wp_load_css");
+add_action("wp_enqueue_scripts", "wp_load_css_js");
 //remove unused default actions from wp_head hook
 remove_action("wp_head", "wp_resource_hints", 2);
 remove_action("wp_head", "feed_links", 2);
@@ -19,7 +20,7 @@ remove_action("wp_head", "wp_print_head_scripts", 9);
 remove_action("wp_head", "locale_stylesheet");
 //remove_action("wp_head", "wp_custom_css_cb", 101);
 remove_action("wp_head", "rest_output_link_wp_head", 10);
-remove_action("wp_head", "index_rel_link"); 
+remove_action("wp_head", "index_rel_link");
 remove_action("wp_head", "parent_post_rel_link", 10, 0);
 remove_action("wp_head", "start_post_rel_link", 10, 0);
 remove_action("wp_head", "adjacent_posts_rel_link_wp_head", 10, 0);
