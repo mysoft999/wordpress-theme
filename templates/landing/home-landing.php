@@ -21,4 +21,7 @@
             </li>
         </ul>
     </div>
+    <div class="background-image-copyright">
+        
+    </div>
 </div>

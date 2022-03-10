@@ -9,7 +9,7 @@
             </div>
             <div class="ack-separate">❊</div>
             <div class="ack-theme">
-                <a href="#" target="_blank">梦回长安</a><span>主题</span>
+                <a href="https://gitee.com/vbzxc/wordpress-theme" target="_blank">梦回长安</a><span>主题</span>
             </div>
         </div>
         <div class="extra-info">其余信息</div>

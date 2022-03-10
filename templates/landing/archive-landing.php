@@ -1,6 +1,6 @@
 <div class="archive-landing">
     <div class="archive-info">
-        <h1>
+        <h1 class="info">
             <?php echo get_the_archive_title() ?>
             <?php echo get_the_archive_description() ?>
         </h1>

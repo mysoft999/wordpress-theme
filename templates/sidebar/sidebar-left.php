@@ -16,5 +16,13 @@
                 </ul>
             </div>
         </div>
+        <div class="sidebar-item monthly-archives">
+            <div class="sidebar-item-title">每月归档</div>
+            <div class="sidebar-item-body">
+                <ul>
+                    <?php wp_get_archives(array("show_post_count" => true)) ?>
+                </ul>
+            </div>
+        </div>
     </div>
 </aside>
