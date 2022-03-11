@@ -1101,3 +1101,96 @@ p {
   bottom: 0;
   opacity: 0;
 }
+
+#post-catalog a {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 3px 5px;
+  text-align: left;
+}
+#post-catalog a > .catalog-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+#post-catalog a > .catalog-wrap::before {
+  position: absolute;
+  content: "❖";
+}
+#post-catalog a > .catalog-wrap::before {
+  text-indent: initial;
+  font-size: 12px;
+  color: var(--theme-color-pale);
+  left: -5px;
+}
+#post-catalog a > .catalog-wrap > div {
+  display: inline-block;
+  height: 0;
+  border-top: 1px dotted #cfcfcf;
+  margin-right: 5px;
+  position: relative;
+}
+#post-catalog a > .catalog-wrap > div::after {
+  position: absolute;
+  content: "";
+}
+#post-catalog a > .catalog-wrap > div::after {
+  width: 4px;
+  height: 4px;
+  background: var(--theme-color-pale);
+  border-radius: 2px;
+  right: 0;
+  top: -2.5px;
+}
+#post-catalog a > .catalog-wrap > span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+#post-catalog a:not(:last-child) > .catalog-wrap::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc(100% + 10px);
+  background: #cfcfcf;
+  left: -1px;
+  top: 18px;
+}
+#post-catalog .catalog-h2 > .catalog-wrap > div {
+  width: 1rem;
+}
+#post-catalog .catalog-h2 > .catalog-wrap > span {
+  max-width: calc(100% - 1rem);
+  font-weight: bold;
+}
+#post-catalog .catalog-h3 > .catalog-wrap > div {
+  width: 2rem;
+}
+#post-catalog .catalog-h3 > .catalog-wrap > span {
+  max-width: calc(100% - 2rem);
+}
+#post-catalog .catalog-h4 > .catalog-wrap > div {
+  width: 3rem;
+}
+#post-catalog .catalog-h4 > .catalog-wrap > span {
+  max-width: calc(100% - 3rem);
+  font-family: var(--theme-font);
+}
+#post-catalog .catalog-h5 > .catalog-wrap > div {
+  width: 4rem;
+}
+#post-catalog .catalog-h5 > .catalog-wrap > span {
+  max-width: calc(100% - 4rem);
+  font-family: var(--theme-font);
+  font-size: 0.9rem;
+}
+#post-catalog .catalog-h6 > .catalog-wrap > div {
+  width: 5rem;
+}
+#post-catalog .catalog-h6 > .catalog-wrap > span {
+  max-width: calc(100% - 5rem);
+  font-family: var(--theme-font);
+  font-size: 0.8rem;
+}
