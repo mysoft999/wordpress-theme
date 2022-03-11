@@ -18,6 +18,11 @@
 
 </div>
 <!--site-wrap-->
+
+<div id="back-to-top" class="hidden">
+    <div><i class="fa fa-arrow-up"></i></div>
+</div>
+
 <?php wp_footer(); ?>
 
 </body>

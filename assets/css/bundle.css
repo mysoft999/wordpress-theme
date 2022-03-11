@@ -1063,3 +1063,41 @@ p {
   right: 40px;
   transform: translateX(calc(100% + 50px)) translateY(40px);
 }
+
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 17%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--theme-color);
+  background: #fff;
+  font-size: 25px;
+  color: var(--theme-color);
+  transition: var(--theme-transition);
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+}
+#back-to-top > div {
+  border-radius: inherit;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  box-sizing: border-box;
+  background: url("assets/images/7933259ae51d7b49d5291e7a1759d6f2-Large.jpeg") repeat;
+  background-size: contain;
+  margin: 5px;
+  border: 1px solid transparent;
+  transition: inherit;
+}
+#back-to-top:hover > div {
+  border-color: var(--theme-color);
+}
+#back-to-top.mousedown > div {
+  box-shadow: var(--theme-shadow);
+}
+#back-to-top.hidden {
+  bottom: 0;
+  opacity: 0;
+}
