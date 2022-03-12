@@ -5,11 +5,11 @@
         </div>
         <div class="acknowledgements">
             <div class="ack-wp">
-                <span>Powered By</span><a href="https://wordpress.org" target="_blank">WordPress</a>
+                <span>Powered By</span><a href="https://wordpress.org" target="_blank" title="WordPress是一款能让您建立出色网站、博客或应用程序的开源软件">WordPress</a>
             </div>
             <div class="ack-separate">❊</div>
             <div class="ack-theme">
-                <a href="https://gitee.com/vbzxc/wordpress-theme" target="_blank">梦回长安</a><span>主题</span>
+                <a href="https://gitee.com/vbzxc/wordpress-theme" target="_blank" title="复古中国风WordPress主题">梦回长安</a><span>主题</span>
             </div>
         </div>
         <div class="extra-info">其余信息</div>
