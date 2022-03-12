@@ -40,6 +40,7 @@ p {
   --theme-color-gray: #888;
   --theme-color: #bd9f6f;
   --theme-color-pale: #deb887;
+  --theme-color-dark-red: #96655c;
   --theme-transition: all 0.2s linear;
   --theme-shadow: 0 0 3px var(--theme-color);
   --theme-shadow-dark: 0 0 8px var(--theme-color-gray);
@@ -1126,6 +1127,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  transition: var(--theme-transition);
   position: relative;
 }
 #post-catalog a > .catalog-wrap::before {
@@ -1137,6 +1139,7 @@ p {
   font-size: 12px;
   color: var(--theme-color-pale);
   left: -5px;
+  z-index: 1;
 }
 #post-catalog a > .catalog-wrap > div {
   display: inline-block;
@@ -1170,6 +1173,17 @@ p {
   background: #cfcfcf;
   left: -1px;
   top: 18px;
+}
+#post-catalog a.current > .catalog-wrap {
+  border-right: 2px solid var(--theme-color-dark-red);
+  background: rgba(222, 184, 135, 0.15);
+  color: var(--theme-color-dark-red);
+}
+#post-catalog a.current > .catalog-wrap::before {
+  color: var(--theme-color-dark-red);
+}
+#post-catalog a.current > .catalog-wrap > div::after {
+  background: var(--theme-color-dark-red);
 }
 #post-catalog .catalog-h2 > .catalog-wrap > div {
   width: 1rem;
