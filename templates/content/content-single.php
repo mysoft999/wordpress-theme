@@ -11,10 +11,21 @@
         <main>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="entry-content">
-                    <?php
-                    the_content();
-                    ?>
+                    <?php the_content(); ?>
                 </div>
+                <footer class="entry-footer">
+                    <div class="extra-meta">
+                        <div class="post-tag">
+                            <i class="fa fa-tags"></i><?php the_tags("<ul><li>", "</li><span>/</span><li>", "</li></ul>") ?>
+                        </div>
+                    </div>
+                    <div class="block-corner-deco">
+                        <span class="tl">❊</span>
+                        <span class="tr">❊</span>
+                        <span class="bl">❊</span>
+                        <span class="br">❊</span>
+                    </div>
+                </footer>
             </article>
         </main>
     </div>
