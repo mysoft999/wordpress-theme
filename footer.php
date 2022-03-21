@@ -22,6 +22,23 @@
 <div id="back-to-top" class="hidden">
     <div><i class="fa fa-arrow-up"></i></div>
 </div>
+<div id="post-img-gallery" style="display: none;">
+    <div class="gallery-close" title="退出画廊">
+        <i class="fa fa-close"></i>
+    </div>
+    <div class="gallery-mover">
+        <div class="icon" title="前一张"><i class="fa fa-chevron-left"></i></div>
+    </div>
+    <div class="gallery-content">
+        <div class="current-img-index"></div>
+        <div class="img-container" id="post-imgs-collection">
+        </div>
+        <div class="current-img-description"></div>
+    </div>
+    <div class="gallery-mover">
+        <div class="icon" title="后一张"><i class="fa fa-chevron-right"></i></div>
+    </div>
+</div>
 
 <?php wp_footer(); ?>
 
