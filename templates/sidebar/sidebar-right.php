@@ -21,7 +21,7 @@
                     <?php wp_tag_cloud(array(
                         "show_count" => 1,
                         "smallest" => 13,
-                        "largest" => 22,
+                        "largest" => 20,
                         "unit" => "px"
                     )) ?>
                 </div>

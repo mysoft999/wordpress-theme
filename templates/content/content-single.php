@@ -19,13 +19,14 @@
                             <i class="fa fa-tags"></i><?php the_tags("<ul><li>", "</li><span>/</span><li>", "</li></ul>") ?>
                         </div>
                         <div class="post-author">
-                            <?php $author = get_the_author_meta("ID"); ?>
+                            <?php $author = get_the_author_meta("ID");
+                            $link = get_author_posts_url($author); ?>
                             <div class="author-avatar">
-                                <?php echo get_avatar($author) ?>
+                                <a href="<?php echo $link ?>"><?php echo get_avatar($author) ?></a>
                             </div>
                             <div class="author-profile">
                                 <div>
-                                    <span>作者：</span><?php the_author_posts_link() ?>
+                                    <span>作者：</span><a href="<?php echo $link ?>"><?php echo get_the_author_meta("display_name"); ?></a>
                                 </div>
                                 <div><?php echo get_the_author_meta("description"); ?></div>
                             </div>

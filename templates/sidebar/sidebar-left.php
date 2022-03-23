@@ -29,4 +29,9 @@
             </div>
         </div>
     </div>
+    <div class="sidebar-bottom">
+        <div class="deco-image">
+            <div></div>
+        </div>
+    </div>
 </aside>
