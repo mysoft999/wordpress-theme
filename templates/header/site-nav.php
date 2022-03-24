@@ -1,4 +1,5 @@
 <nav id="site-navigation">
+    <div class="mobile-nav-icon" title="打开/关闭菜单"><i class="fa fa-navicon"></i></div>
     <?php
     wp_nav_menu(
         array(
