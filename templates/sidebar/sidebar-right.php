@@ -20,9 +20,9 @@
                 <div class="sidebar-item-body">
                     <?php wp_tag_cloud(array(
                         "show_count" => 1,
-                        "smallest" => 13,
-                        "largest" => 20,
-                        "unit" => "px"
+                        "smallest" => 0.6,
+                        "largest" => 1.2,
+                        "unit" => "rem"
                     )) ?>
                 </div>
             </div>
