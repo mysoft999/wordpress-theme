@@ -23,9 +23,7 @@ function platform_check()
             }
         }();
         if (platform === "Win") {
-            var style = document.createElement("style");
-            style.innerHTML = `::-webkit-scrollbar{width:6px;background:#f7f1e5}::-webkit-scrollbar-thumb{background:#888;border-radius:6px}:root{scrollbar-width:thin;scrollbar-color:#888 #f7f1e5}`;
-            document.head.appendChild(style);
+            document.documentElement.classList.add("platform-win");
         }
     </script>
 <?php
