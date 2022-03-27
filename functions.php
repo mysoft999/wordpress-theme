@@ -22,8 +22,14 @@ function platform_check()
                 return "Mac";
             }
         }();
+        const isSafari = function() {
+            return navigator.vendor === "Apple Computer, Inc.";
+        }();
         if (platform === "Win") {
             document.documentElement.classList.add("platform-win");
+        }
+        if (isSafari) {
+            document.documentElement.classList.add("browser-safari");
         }
     </script>
 <?php

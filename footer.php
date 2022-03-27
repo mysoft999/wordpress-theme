@@ -39,6 +39,21 @@
         <div class="icon" title="后一张"><i class="fa fa-chevron-right"></i></div>
     </div>
 </div>
+<div id="mask">
+    <div id="popup-message">
+        <div class="popup-title"></div>
+        <div class="popup-wrap">
+            <div class="message-body"></div>
+            <div>
+                <button class="button-has-bg">
+                    <div class="button-body">确定</div>
+                </button><button class="button-has-bg">
+                    <div class="button-body">取消</div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <?php wp_footer(); ?>
 
