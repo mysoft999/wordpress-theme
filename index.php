@@ -8,26 +8,26 @@ if ($home) {
     <div class="primary-mask-top">
         <div></div>
     </div>
-    <?php
-    get_template_part("templates/sidebar/sidebar-left"); ?>
-    <div class="site-content">
-        <?php get_template_part("templates/breadcrumb/breadcrumb") ?>
-        <main>
-            <div class="post-list">
-                <?php
-                if (have_posts()) {
-                    include "classes/theme.php";
-                    while (have_posts()) {
-                        the_post();
-                        get_template_part("templates/content/content-excerpt");
+    <div class="primary-content">
+        <div class="site-content">
+            <?php get_template_part("templates/breadcrumb/breadcrumb") ?>
+            <main>
+                <div class="post-list">
+                    <?php
+                    if (have_posts()) {
+                        include "classes/theme.php";
+                        while (have_posts()) {
+                            the_post();
+                            get_template_part("templates/content/content-excerpt");
+                        }
                     }
-                }
-                ?>
-            </div>
-        </main>
+                    ?>
+                </div>
+            </main>
+        </div>
+        <?php
+        get_template_part("templates/sidebar/sidebar-left");
+        get_template_part("templates/sidebar/sidebar-right"); ?>
     </div>
-    <?php
-    get_template_part("templates/sidebar/sidebar-right");
-    ?>
 </div>
 <?php get_footer() ?>
