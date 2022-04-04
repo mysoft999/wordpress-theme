@@ -19,13 +19,15 @@
                             </div>
                             <div class="post-author">
                                 <?php $author = get_the_author_meta("ID");
-                                $link = get_author_posts_url($author); ?>
-                                <div class="author-avatar">
+                                $link = get_author_posts_url($author);
+                                $display_name
+                                    = get_the_author_meta("display_name"); ?>
+                                <div class="author-avatar" title="作者：<?php echo $display_name ?>">
                                     <a href="<?php echo $link ?>"><?php echo get_avatar($author) ?></a>
                                 </div>
                                 <div class="author-profile">
-                                    <div>
-                                        <span>作者：</span><a href="<?php echo $link ?>"><?php echo get_the_author_meta("display_name"); ?></a>
+                                    <div aria-label="文章作者">
+                                        <span>作者：</span><a href="<?php echo $link ?>"><?php echo $display_name ?></a>
                                     </div>
                                     <div><?php echo get_the_author_meta("description"); ?></div>
                                 </div>
