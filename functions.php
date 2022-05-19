@@ -1,4 +1,7 @@
 <?php
+//enable app password in local dev environment (http)
+//add_filter("wp_is_application_passwords_available", "__return_true");
+
 //add site css js
 function wp_load_css_js()
 {
@@ -69,12 +72,23 @@ add_theme_support("custom-background");
 add_theme_support("post-thumbnails");
 add_theme_support("title-tag");
 add_theme_support(
-    'custom-logo',
+    "custom-logo",
     array(
-        'height'               => 100,
-        'width'                => 100,
-        'flex-width'           => true,
-        'flex-height'          => true,
-        'unlink-homepage-logo' => true,
+        "height"               => 100,
+        "width"                => 100,
+        "flex-width"           => true,
+        "flex-height"          => true,
+        "unlink-homepage-logo" => true,
     )
 );
+//add 'featured_image_src' field to rest api response
+//reference: https://developer.wordpress.org/reference/functions/register_rest_field/
+// add_action("rest_api_init", function () {
+//     register_rest_field("post", "featured_image_url", array(
+//         "get_callback" => function ($post_arr) {
+//             return wp_get_attachment_image_url($post_arr["featured_media"], "full");
+//         },
+//         "update_callback" => null,
+//         "schema" => null
+//     ));
+// });
